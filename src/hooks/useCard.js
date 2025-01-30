@@ -25,6 +25,15 @@ const useCard = (card) => {
 
   //! Close new project card form handler
   const handleCloseCardForm = () => {
+    setProjectCardData({
+      id: "",
+      title: "",
+      description: "",
+      priority: "",
+      date: "",
+      projectId: "",
+    });
+
     setIsFormOpen(false);
   };
 
@@ -51,15 +60,6 @@ const useCard = (card) => {
         ? prevCardList.map((card) => (card.id === newCard.id ? newCard : card))
         : [...prevCardList, newCard]
     );
-
-    setProjectCardData({
-      id: "",
-      title: "",
-      description: "",
-      priority: "",
-      date: "",
-      projectId: "",
-    });
 
     handleCloseCardForm();
   };
