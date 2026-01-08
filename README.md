@@ -9,7 +9,7 @@ ToDoApp es una aplicación de gestión de tareas desarrollada con React. Permite
 - Asignar prioridades a las tareas.
 - Interfaz simple e intuitiva.
 
--
+***
 
 # ToDoApp
 
