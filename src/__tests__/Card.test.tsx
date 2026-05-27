@@ -84,13 +84,13 @@ describe("Card", () => {
   it("should render the delete button", () => {
     render(<Card card={mockCard} onEdit={vi.fn()} />);
 
-    expect(screen.getByLabelText("Delete card")).toBeInTheDocument();
+    expect(screen.getByLabelText("Delete task: Fix login bug")).toBeInTheDocument();
   });
 
   it("should dispatch delete modal action when delete button is clicked", async () => {
     render(<Card card={mockCard} onEdit={vi.fn()} />);
 
-    await userEvent.click(screen.getByLabelText("Delete card"));
+    await userEvent.click(screen.getByLabelText("Delete task: Fix login bug"));
 
     expect(mockUiDispatch).toHaveBeenCalled();
   });
@@ -99,7 +99,7 @@ describe("Card", () => {
     const onEdit = vi.fn();
     render(<Card card={mockCard} onEdit={onEdit} />);
 
-    await userEvent.click(screen.getByLabelText("Delete card"));
+    await userEvent.click(screen.getByLabelText("Delete task: Fix login bug"));
 
     expect(onEdit).not.toHaveBeenCalled();
   });
