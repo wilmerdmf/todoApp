@@ -15,7 +15,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "ignoreDeprecations": "6.0",
     "types": ["vite/client"],
     "baseUrl": ".",
     "paths": {
@@ -28,6 +27,6 @@
       "@/constants/*": ["src/constants/*"]
     }
   },
-  "include": ["src", "vite.config.ts"],
+  "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
