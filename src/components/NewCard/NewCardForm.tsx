@@ -62,7 +62,7 @@ const NewCardForm = ({
       role="dialog"
       aria-modal="true"
       aria-labelledby="card-form-title"
-      aria-hidden={!isFormOpen}
+      aria-hidden={undefined}
     >
       <button className="close-todo-menu" onClick={onClose} type="button" aria-label="Close form">
         <ChevronDown size={26} color="#e6edf3" strokeWidth={1.5} aria-hidden="true" />

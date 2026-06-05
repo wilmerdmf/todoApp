@@ -2,7 +2,7 @@
 
 Full-stack web application for task management with user authentication. Organize tasks by projects, priorities and dates, with drag & drop support, real-time search and a documented REST API.
 
-> 🚀 **[Live Demo](https://wilmerdmf.github.io/todoApp)** — Backend hosted on Render (may take ~30s to wake up on first request)
+> 🚀 **[Live Demo](https://wilmerdmf.github.io/todoApp)** — Backend hosted on Render free tier. Response times may vary due to shared infrastructure.
 
 ---
 

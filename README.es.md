@@ -2,7 +2,7 @@
 
 Aplicación web fullstack para gestión de tareas con autenticación de usuarios. Permite organizar tareas por proyectos, prioridades y fechas, con soporte para drag & drop, búsqueda en tiempo real y una API REST documentada.
 
-> 🚀 **[Demo en vivo](https://wilmerdmf.github.io/todoApp)** — Backend alojado en Render (puede tardar ~30s en responder la primera petición)
+> 🚀 **[Demo en vivo](https://wilmerdmf.github.io/todoApp)** — Backend alojado en Render (plan gratuito). Los tiempos de respuesta pueden variar debido a la infraestructura compartida.
 
 ---
 
