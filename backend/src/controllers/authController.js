@@ -18,8 +18,8 @@ const generateRefreshToken = (id) => {
 const setCookieToken = (res, token) => {
   res.cookie("token", token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    secure: true,
+    sameSite: "none",
     maxAge: 15 * 60 * 1000,
   });
 };
@@ -27,8 +27,8 @@ const setCookieToken = (res, token) => {
 const setRefreshCookieToken = (res, token) => {
   res.cookie("refreshToken", token, {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    secure: true,
+    sameSite: "none",
     maxAge: 7 * 24 * 60 * 60 * 1000,
   });
 };
@@ -36,8 +36,8 @@ const setRefreshCookieToken = (res, token) => {
 const clearCookieToken = (res) => {
   res.cookie("token", "", {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    secure: true,
+    sameSite: "none",
     maxAge: 0,
   });
 };
@@ -45,8 +45,8 @@ const clearCookieToken = (res) => {
 const clearRefreshCookieToken = (res) => {
   res.cookie("refreshToken", "", {
     httpOnly: true,
-    secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    secure: true,
+    sameSite: "none",
     maxAge: 0,
   });
 };
