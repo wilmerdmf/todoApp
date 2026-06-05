@@ -25,7 +25,7 @@ const DeleteProjectModal = () => {
   const { projectName, affectedCardsCount } = deleteProjectModal;
 
   return (
-    <div className="modal-overlay" onClick={handleClose} aria-hidden="true">
+    <div className="modal-overlay" onClick={handleClose} role="presentation">
       <div
         ref={containerRef}
         className="modal-content"

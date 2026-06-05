@@ -24,7 +24,7 @@ const DeleteCardModal = () => {
   const { cardTitle } = deleteCardModal;
 
   return (
-    <div className="modal-overlay" onClick={handleClose} aria-hidden="true">
+    <div className="modal-overlay" onClick={handleClose} role="presentation">
       <div
         ref={containerRef}
         className="modal-content"
